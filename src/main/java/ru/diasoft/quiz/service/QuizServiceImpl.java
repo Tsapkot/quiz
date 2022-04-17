@@ -26,7 +26,8 @@ public class QuizServiceImpl implements QuizService {
     }
 
     private void startConsoleQuiz() {
-        try (Scanner scanner = new Scanner(new InputStreamReader(this.resource.getInputStream()))) {
+        try {
+            Scanner scanner = new Scanner(new InputStreamReader(this.resource.getInputStream()));
             while (scanner.hasNext()) {
                 Scanner in = new Scanner(System.in);
                 System.out.println(new Question(scanner.nextLine()));
