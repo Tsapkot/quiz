@@ -1,5 +1,6 @@
 package ru.diasoft.quiz.model;
 
+//на будущее
 public class Question {
     private String text;
 
